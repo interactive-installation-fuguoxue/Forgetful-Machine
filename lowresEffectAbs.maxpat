@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 1468.0, 713.0 ],
+		"rect" : [ 42.0, 85.0, 1468.0, 713.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,61 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-35",
+					"id" : "obj-12",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 749.0, 278.0, 150.0, 34.0 ],
+					"text" : "161: threshold when dimension is 480*270"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 370.588228225708008, 326.470582008361816, 48.0, 22.0 ],
-					"text" : "set 159"
+					"patching_rect" : [ 297.794111967086792, 370.560790362358091, 35.0, 22.0 ],
+					"text" : "set 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 369.629617512226105, 376.296283960342407, 48.0, 22.0 ],
+					"text" : "set 161"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 346.82927542924881, 319.738822071552192, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 346.82927542924881, 278.425915896892548, 43.0, 22.0 ],
+					"text" : "r reset"
 				}
 
 			}
@@ -92,8 +140,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 442.302961111068726, 265.301493287086487, 235.526314973831177, 89.0 ],
-					"text" : "If counter number is 161 and the counter is counting upward, then stop the counter. \n\nOr if counter number is 1 and the counter is counting downward, then stop the counter. "
+					"patching_rect" : [ 442.302961111068726, 278.425915896892548, 235.526314973831177, 89.0 ],
+					"text" : "If counter number is 193 and the counter is counting upward, then stop the counter. \n\nOr if counter number is 1 and the counter is counting downward, then stop the counter. "
 				}
 
 			}
@@ -104,7 +152,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.552631616592407, 339.389506025314404, 38.0, 22.0 ],
+					"patching_rect" : [ 158.552631616592407, 380.130245430469586, 38.0, 22.0 ],
 					"text" : "min 1"
 				}
 
@@ -128,8 +176,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.829276084899902, 314.759690761566162, 41.0, 22.0 ],
-					"text" : "set 10"
+					"patching_rect" : [ 245.236685216426849, 362.227456810474393, 35.0, 22.0 ],
+					"text" : "set 1"
 				}
 
 			}
@@ -167,7 +215,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 326.829276084899902, 240.093290667533893, 351.0, 22.0 ],
-					"text" : "if ($i1 == 161 && $i2 == 0) || ($i1 == 1 && $i2 == 1) then 0 else 1"
+					"text" : "if ($i1 == 193 && $i2 == 0) || ($i1 == 1 && $i2 == 1) then 0 else 1"
 				}
 
 			}
@@ -204,7 +252,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 222.514034628868103, 390.643853306770325, 50.0, 22.0 ]
+					"patching_rect" : [ 222.514034628868103, 463.384592711925507, 50.0, 22.0 ]
 				}
 
 			}
@@ -215,7 +263,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 222.514034628868103, 347.330582618713379, 92.0, 22.0 ],
+					"patching_rect" : [ 222.514034628868103, 420.071322023868561, 92.0, 22.0 ],
 					"text" : "counter 2 1 161"
 				}
 
@@ -228,7 +276,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 222.514034628868103, 478.831353306770325, 64.14634108543396, 64.14634108543396 ]
+					"patching_rect" : [ 222.514034628868103, 551.572092711925507, 64.14634108543396, 64.14634108543396 ]
 				}
 
 			}
@@ -257,6 +305,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -294,6 +356,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -346,15 +415,32 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-35", 0 ]
+					"destination" : [ "obj-167", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-167", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"destination" : [ "obj-14", 0 ],
+					"order" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 2,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
